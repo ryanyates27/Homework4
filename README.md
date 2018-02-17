@@ -1,6 +1,6 @@
 
 # CS113-HW04-DoubleLinkedList
-## HW #4 for CS113 - Double Linked List Implementation and Demo
+## HW #4 for CS113 - Double Linked List Implementation
 
 > **"A list is only as strong as its weakest link."**
 > — Donald Knuth
