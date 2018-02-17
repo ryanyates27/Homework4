@@ -3,13 +3,15 @@
 ## HW #4 for CS113 - Double Linked List Implementation and Demo
 
 > **"A list is only as strong as its weakest link."**
-> — Donald Knuth 
+> — Donald Knuth
+
 >**"If you find that you're spending almost all your time on theory, start turning some attention to practical things; it will improve your theories. If you find that you're spending almost all your time on practice, start turning some attention to theoretical things; it will improve your practice."**
 > — Donald Knuth 
 
-**Provide your implementation for a `DoubleLinkedList<E>`**.  Apart from a default constructor and `toString()` method, make sure to implement the methods from the `List` and create an inner class implementing `ListIterator` interface (in addition to the necessary static inner class `Node<E>`).  **You will be graded on having all the methods below implemented and passing all JUnit tests for the `List` interface.  You will also write JUnit tests for the `ListIterator`** Feel free to use code from the book (`KWLinkedList`) or slides.
+**Provide your implementation for a `DoubleLinkedList<E>`**.  Apart from a default constructor and `toString()` method, make sure to implement the methods from the `List` interface and create an inner class implementing `ListIterator` interface (in addition to the necessary static inner class `Node<E>`).  **You will be graded on having all the methods below implemented and passing all JUnit tests for the `List` interface.  You will also write JUnit tests for the `ListIterator`.** Feel free to use code from the book (`KWLinkedList`) or slides.
 
 `ListIterator` interface [methods](https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html) to implement:
+
 | return type | method + description |
 |--|--|
 | `void` | `add(E e)` |
@@ -32,6 +34,7 @@
 | | Replaces the last element returned by next() or previous() with the specified element (optional operation). |
 
 `List` Interface [methods](https://docs.oracle.com/javase/7/docs/api/java/util/List.html) to implement:
+
 | return type | method + description |
 |--|--|
 | `Iterator<E>` | `iterator()` |
@@ -70,6 +73,7 @@
 
 
 These are the rest of  the`List` interface methods (**do not build these**, we will implement them later):
+
 | return type | method + description |
 |--|--|
 | `List<E>` | `subList(int fromIndex, int toIndex)` |
@@ -96,6 +100,10 @@ These are the rest of  the`List` interface methods (**do not build these**, we w
 | | Sorts this list according to the order induced by the specified Comparator. |
 | `default Spliterator<E>` | `spliterator()` |
 | | Creates a Spliterator over the elements in this list. |
+
+
+----------
+
 
 ### Make sure to commit + push *before* the deadline to have your code be considered for grading.
 
