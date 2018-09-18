@@ -111,6 +111,5 @@ These are the rest of  the`List` interface methods (**do not build these**, we w
 
 >Pro-Tips:
 >- Build the constructor and `toString` first, then build the `ListIterator` implementation to help you build the `List` interface methods.
->- Need help building JUnit tests? Look at past homeworks/group projects, but you don't even need to look that far! Since the `List` interface methods are built using a `ListIterator`, the test data given can be reused! Just watch out for the returns and parameters, they're slightly different even if the methods have the same name.
 >- **You don't need to document any methods that are overridden!** By using the `@Override` JavaDoc tag, when you generate the JavaDoc it will automatically connect the inherited documentation! Just don't forget to document constructors, helper methods, etc. ***#thanksJavaDoc***
 >- Note that out of the ***"Do not implement"*** `List` interface methods, you have the knowledge to get the first 6 working! Since the parameters are `Collection` types (and every data structure we have built/will build implements `Collection`), you are familiar with most of the [standard methods](https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html) it contains.  Try implementing them if you have some spare time!
