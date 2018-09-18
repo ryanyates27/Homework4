@@ -642,15 +642,16 @@ public class DoubleLinkedListTest {
 
         // Test nextIndex at beginning of list
         stringIterator = stringList.listIterator(STRING_SET_INDEX); // index 0
-        assertEquals("Test failed - Unexpected next index at beginning of list.", (STRING_SET_INDEX + 1), stringIterator.nextIndex());
+        // Returns the index of the element that would be returned by a subsequent call to next
+        assertEquals("Test failed - Unexpected next index at beginning of list.", STRING_SET_INDEX, stringIterator.nextIndex());
 
         // Test nextIndex in middle of list
         intIterator = intList.listIterator(INT_SET_INDEX); // index 1
-        assertEquals("Test failed - Unexpected next index in middle of list.", (INT_SET_INDEX + 1), intIterator.nextIndex());
+        assertEquals("Test failed - Unexpected next index in middle of list.", INT_SET_INDEX, intIterator.nextIndex());
 
         // Test nextIndex at end of list
         charIterator = charList.listIterator(CHAR_SET_INDEX); // index 3; next index should == the list's size
-        assertEquals("Test failed - Unexpected next index value at end of list.", CHAR_SET_INDEX, charIterator.nextIndex());
+        assertEquals("Test failed - Unexpected next index value at end of list.", charList.size(), charIterator.nextIndex());
 
         // Test nextIndex on an empty list
         doubleList.clear();
@@ -709,7 +710,7 @@ public class DoubleLinkedListTest {
 
         // Test at beginning of list
         stringIterator = stringList.listIterator(STRING_SET_INDEX); // index 0
-        assertEquals("Test failed - Unexpected previous index at beginning of list.", (STRING_SET_INDEX - 1), stringIterator.previousIndex());
+        assertEquals("Test failed - Unexpected previous index at beginning of list.", -1, stringIterator.previousIndex());
 
         // Test in middle of list
         intIterator = intList.listIterator(INT_SET_INDEX); // index 1
