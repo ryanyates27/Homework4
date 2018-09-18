@@ -27,13 +27,13 @@ public class DoubleLinkedListTest {
     /** Expected values following the building of the linked lists */
     private static final String TO_STRING_EMPTY = "[]";
     private static final String[] TO_STRING_ADD1 = {"[first]",
-            "[100]",
-            "[A]",
-            "[1.1]"};
+                                                    "[100]",
+                                                    "[A]",
+                                                    "[1.1]"};
     private static final String[] TO_STRING_ADD3 = {"[first, second, third]",
-            "[100, 200, 300]",
-            "[A, B, C]",
-            "[1.1, 2.2, 3.3]"};
+                                                    "[100, 200, 300]",
+                                                    "[A, B, C]",
+                                                    "[1.1, 2.2, 3.3]"};
 
     /** Values inserted through linked list's add method */
     private static final String STRING_INSERT_VAL = "w00t";
@@ -46,19 +46,19 @@ public class DoubleLinkedListTest {
 
     /** Expected values following the insertion of an additional element */
     private static final String[] TO_STRING_INSERT = {"[w00t, first, second, third]",
-            "[100, 555, 200, 300]",
-            "[A, B, X, C]",
-            "[1.1, 2.2, 3.3, -3.14]"};
+                                                    "[100, 555, 200, 300]",
+                                                    "[A, B, X, C]",
+                                                    "[1.1, 2.2, 3.3, -3.14]"};
 
-    /** Index of iterator by which the set method is called. stringList and intList will set following a call to next,
-     *  whereas charList and doubleList will set following a call to previous. */
+    /** Index of iterator by which the set. add and remove methods are called. stringList and intList will be modified
+     *  following a call to next, whereas charList and doubleList will set following a call to previous. */
     private static final int STRING_SET_INDEX = 0, INT_SET_INDEX = 1, DOUBLE_SET_INDEX = 2, CHAR_SET_INDEX = 3;
 
-    /** Expected values following the iterator's set method */
+    /** Expected values following the iterator's set or remove methods */
     private static final String[] TO_STRING_SET = { "[w00t, second, third]",
-            "[100, 555, 300]",
-            "[A, B, X]",
-            "[1.1, -3.14, 3.3]"};
+                                                    "[100, 555, 300]",
+                                                    "[A, B, X]",
+                                                    "[1.1, -3.14, 3.3]"};
 
     /** Class implementing the List interface */
     private List<String> stringList;
