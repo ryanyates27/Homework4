@@ -1,6 +1,6 @@
 
-# CS113-HW03-DoubleLinkedList
-## HW #3 for CS113 - Double Linked List Implementation
+DoubleLinkedList
+##  Double Linked List Implementation
 
 *[Insert Build Status Image]*
 
