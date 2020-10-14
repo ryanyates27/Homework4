@@ -1,4 +1,4 @@
-package edu.miracosta.edu.cs113;
+package edu.miracosta.cs113;
 import java.util.*;
 
 public class DoubleLinkedList<E> extends AbstractSequentialList<E>
